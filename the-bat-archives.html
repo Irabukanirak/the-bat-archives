@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Bat Archives</title>
+
+    <link rel="icon" href="images/batman.jpg" type="image/jpeg">
+
+    <link rel="stylesheet" href="style-cobalagi.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111111;
+    color: #eeeeee;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+}
+
+.content-section {
+    background-color: #1c1c1c;
+}
+
+#home {
+    text-align: center;
+}
+
+.header-label {
+    color: rgb(255, 204, 0);
+}
+
+.sidebar {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+h1 {
+    color: #ffcc00;
+}
+
+.quote-box {
+    background-color: #ffcc0020;
+}
+
+.section-title {
+    color: hsl(48, 100%, 50%);
+}
+
+.announcement {
+    border-color: hsla(48, 100%, 50%, 0.8);
+}
+
+header {
+    background-color: #080808;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("images/gotham-header.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.navbar {
+    background: #080808;
+}
+
+header {
+    width: 100%;
+    min-height: 430px;
+    max-height: 650px;
+
+    padding: 100px 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 5px solid #ffcc00;
+}
+
+.header-content {
+    max-width: 850px;
+    text-align: center;
+}
+
+.header-label {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin: 15px 0;
+}
+
+.header-content p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.section-title {
+    font-size: 23px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header h1 {
+    text-shadow: 3px 3px 8px #000000;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 13px;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 5%;
+
+    border-bottom: 1px solid #444444;
+}
+
+.nav-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-logo span {
+    color: #ffcc00;
+    font-size: 30px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:link {
+    color: #eeeeee;
+}
+
+.navbar a:visited {
+    color: #eeeeee;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.navbar a:active {
+    color: #ff6600;
+}
+
+.character-list a:hover,
+.news-list a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+
+    margin: 40px auto;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.sidebar {
+    width: 28%;
+    min-width: 220px;
+    max-width: 350px;
+    flex-shrink: 0;
+
+    padding: 20px;
+
+    border: 1px solid #444444;
+    border-top: 3px solid #ffcc00;
+}
+
+.main-content {
+    width: 72%;
+    min-width: 0;
+}
+
+.content-section {
+    margin: 0 0 30px 0;
+}
+
+.section-title {
+    margin: 0 0 20px 0;
+}
+
+.content-section {
+    padding: 30px;
+}
+
+.sidebar-box {
+    padding: 20px 15px;
+}
+
+.profile-card {
+    padding: 20px;
+}
+
+.content-section {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+}
+
+.sidebar {
+    border-left: 3px solid #ffcc00;
+}
+
+.character-card {
+    border: 1px solid #444444;
+}
+
+.character-card {
+    border-radius: 8px;
+}
+
+.header-button {
+    display: inline-block;
+
+    padding: 12px 25px;
+    margin-top: 15px;
+
+    background-color: #ffcc00;
+    color: #111111;
+
+    font-weight: bold;
+
+    border: 2px solid #ffcc00;
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+.header-button:hover {
+    background-color: transparent;
+    color: #ffcc00;
+}
+
+.content-section {
+    background-color: #1c1c1c;
+    color: #eeeeee;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+}
+
+.section-title {
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 12px;
+}
+
+blockquote {
+    padding: 15px;
+    margin-top: 15px;
+
+    border-left: 4px solid #ffcc00;
+
+    background-color: #252525;
+
+    color: #dddddd;
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+
+    border-radius: 5px;
+}
+
+.profile-card {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+
+    background-color: #252525;
+
+    border: 1px solid #555555;
+    border-radius: 8px;
+}
+
+.profile-card img {
+    width: 220px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border: 2px solid #ffcc00;
+}
+
+.profile-description {
+    flex: 1;
+}
+
+.profile-description h3 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.status {
+    display: inline-block;
+
+    background-color: #ffcc00;
+    color: #111111;
+
+    padding: 5px 12px;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    border-radius: 3px;
+}
+
+.character-grid,
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.character-card,
+.gallery-item {
+    background-color: #252525;
+
+    border: 1px solid #444444;
+    border-radius: 8px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.character-card:hover,
+.gallery-item:hover {
+    border-color: #ffcc00;
+    transform: translateY(-5px);
+}
+
+.character-card img,
+.gallery-item img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+
+    margin-bottom: 15px;
+}
+
+.character-card h3,
+.gallery-item h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.character-card p {
+    text-align: center;
+    font-size: 13px;
+}
+
+.villain-card {
+    border-top: 3px solid #990000;
+}
+
+.sidebar-box {
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid #444444;
+}
+
+.sidebar-box h3 {
+    color: #ffcc00;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.sidebar-box ul {
+    padding-left: 20px;
+}
+
+.sidebar-box li {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.quote-box {
+    background-color: #252525;
+}
+
+.quote-box blockquote {
+    border-left: 3px solid #ffcc00;
+
+    color: #dddddd;
+    font-size: 13px;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.section-title i,
+.sidebar-box i {
+    color: #ffcc00;
+}
+
+.video-container {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid #555555;
+    border-radius: 5px;
+}
+
+ul, ol {
+    padding-left: 30px;
+}
+
+.character-list li {
+    margin-bottom: 10px;
+}
+
+.news-list li {
+    margin-bottom: 10px;
+}
+
+form {
+    width: 100%;
+
+    padding: 25px;
+
+    background-color: #252525;
+
+    border: 1px solid #555555;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+
+    padding: 12px;
+    margin-bottom: 20px;
+
+    background-color: #111111;
+    color: #ffffff;
+
+    border: 1px solid #555555;
+    border-radius: 4px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #ffcc00;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin: 0;
+}
+
+.checkbox-group label {
+    display: inline;
+    margin: 0;
+    font-weight: normal;
+}
+
+form button {
+    width: 100%;
+
+    padding: 14px;
+
+    background-color: #ffcc00;
+    color: #111111;
+
+    font-weight: bold;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ffffff;
+}
+
+.footer {
+    width: 100%;
+    min-height: 220px;
+
+    padding: 40px 20px;
+
+    background-color: #050505;
+    color: #ffffff;
+
+    text-align: center;
+
+    border-top: 4px solid #ffcc00;
+}
+
+.footer-logo {
+    font-family: 'Cinzel', serif;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    color: #ffcc00;
+}
+
+.footer p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.design {
+    color: #ffcc00;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+}
+
+.sidebar {
+    min-width: 220px;
+    max-width: 350px;
+}
+
+.main-content {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.footer {
+    min-height: 220px;
+    max-height: 500px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .main-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .character-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card {
+        flex-direction: column;
+    }
+
+    .profile-card img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .content-section {
+        padding: 18px;
+    }
+
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+}
+
+</style>
+
+<body>
+
+    <header id="home">
+
+        <div class="header-content">
+
+            <p class="header-label">WELCOME TO THE WORLD OF DC</p>
+
+            <h1>THE BAT ARCHIVES</h1>
+
+            <p>
+                Explore the legends, stories, and mysteries
+                of Gotham City's greatest heroes and villains.
+            </p>
+
+            <a href="#about" class="header-button">
+                EXPLORE MORE
+            </a>
+
+        </div>
+
+    </header>
+
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            <span>DC</span> COMICS
+        </div>
+
+        <ul class="nav-menu">
+
+            <li>
+                <a href="#home">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="#gallery">
+                    Gallery
+                </a>
+            </li>
+
+            <li>
+                <a href="#membership">
+                    Membership
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div class="container">
+
+        <aside class="sidebar">
+
+            <section class="sidebar-box">
+
+                <h3>
+                    <i class="fa-solid fa-mask"></i>
+                    CHARACTER DATABASE
+                </h3>
+
+                <ul class="character-list">
+
+                    <li><a href="#batman">Batman</a></li>
+
+                    <li><a href="#batfamily">Nightwing</a></li>
+
+                    <li><a href="#batfamily">Red Hood</a></li>
+
+                    <li><a href="#batfamily">Robin</a></li>
+
+                    <li><a href="#villains">Joker</a></li>
+
+                    <li><a href="#villains">Harley Quinn</a></li>
+
+                    <li><a href="#villains">Clayface</a></li>
+
+                </ul>
+
+            </section>
+
+            <section class="sidebar-box">
+
+                <h3>
+                    <i class="fa-brands fa-youtube"></i>
+                    VIDEO ARCHIVE
+                </h3>
+
+                <div class="video-container">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/KCR-rz0YfD4?si=EQ_22RLazt9Zfisa/VIDEO_ID"
+                        title="Clayface Trailer"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+                <p class="small-text">
+                    Watch the latest Batman trailers
+                    and DC Comics features.
+                </p>
+
+            </section>
+
+        </aside>
+
+        <main class="main-content">
+
+            <section id="about" class="content-section">
+
+                <h2 class="section-title">
+                    <i class="fa-solid fa-building"></i>
+                    ABOUT DC COMICS
+                </h2>
+
+                <p>
+                    <strong>DC Comics</strong> is one of the most
+                    recognizable comic book publishers in the world.
+                    It is home to legendary superheroes, memorable
+                    stories, and iconic fictional universes.
+                </p>
+
+                <p>
+                    This website focuses on the
+                    <em>Batman Universe</em>, featuring the Dark Knight,
+                    his allies known as the <strong>Bat-Family</strong>,
+                    and the dangerous villains of Gotham City. Ya Allah 
+                    mau seblak T-T
+                </p>
+
+                <blockquote>
+                    "Welcome to Gotham City, where every hero
+                    has a story and every villain has a purpose."
+                </blockquote>
+
+            </section>
+
+            <section id="batman" class="content-section">
+
+                <h2 class="section-title">
+                    <i class="fa-solid fa-bat"></i>
+                    THE DARK KNIGHT
+                </h2>
+
+                <div class="profile-card">
+
+                    <img
+                        src="images/batman.jpeg"
+                        alt="Batman character illustration"
+                    >
+
+                    <div class="profile-description">
+
+                        <h3>BATMAN</h3>
+
+                        <p>
+                            Batman, also known as Bruce Wayne,
+                            is Gotham City's legendary vigilante.
+                            Using intelligence, detective skills,
+                            technology, and combat abilities,
+                            he protects Gotham from crime. 
+                        </p>
+
+                        <p>
+                            <strong>Real Name:</strong> Bruce Wayne
+                        </p>
+
+                        <p>
+                            <strong>Base:</strong> Gotham City
+                        </p>
+
+                        <p>
+                            <strong>Occupation:</strong> Detective
+                            and Vigilante
+                        </p>
+
+                        <span class="status">
+                            HERO PROFILE
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="batfamily" class="content-section">
+
+                <h2 class="section-title">
+                    <i class="fa-solid fa-users"></i>
+                    THE BAT-FAMILY
+                </h2>
+
+                <p>
+                    The Bat-Family consists of Batman's trusted
+                    allies who help protect Gotham City.
+                </p>
+
+                <div class="character-grid">
+
+                    <div class="character-card">
+
+                        <img src="images/nightwing.jpeg"
+                             alt="Richard Grayson">
+
+                        <h3>Nightwing</h3>
+
+                        <p>
+                            Former Robin and protector of Blüdhaven.
+                        </p>
+
+                    </div>
+
+
+                    <div class="character-card">
+
+                        <img src="images/red-hood.jpeg"
+                             alt="Jason Todd">
+
+                        <h3>Red Hood</h3>
+
+                        <p>
+                            Demi kesejahteraan bersama, bagaimana kalau
+                            kita menikah besok 
+                            -irak
+                        </p>
+
+                    </div>
+
+
+                    <div class="character-card">
+
+                        <img src="images/robin.jpeg"
+                             alt="Damian Wayne">
+
+                        <h3>Robin</h3>
+
+                        <p>
+                            Batman's youngest son and his sidekick.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="villains" class="content-section">
+
+                <h2 class="section-title">
+                    <i class="fa-solid fa-skull"></i>
+                    GOTHAM VILLAINS
+                </h2>
+
+                <p>
+                    Gotham City is home to some of the most
+                    dangerous and unpredictable villains.
+                </p>
+
+                <div class="character-grid">
+
+                    <div class="character-card villain-card">
+
+                        <img src="images/joker.jpeg"
+                             alt="Joker">
+
+                        <h3>The Joker</h3>
+
+                        <p>
+                            Gotham's infamous criminal mastermind.
+                        </p>
+
+                    </div>
+
+
+                    <div class="character-card villain-card">
+
+                        <img src="images/harley-quinn.jpeg"
+                             alt="Harleen Quinzel">
+
+                        <h3>Harley Quinn</h3>
+
+                        <p>
+                            An unpredictable criminal with
+                            a unique personality.
+                        </p>
+
+                    </div>
+
+
+                    <div class="character-card villain-card">
+
+                        <img src="images/clayface.jpeg"
+                             alt="Matthew Hagen">
+
+                        <h3>Clayface</h3>
+
+                        <p>
+                            An actor who can shape-shifting.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="gallery" class="content-section">
+
+                <h2 class="section-title">
+                    <i class="fa-solid fa-images"></i>
+                    COMIC & MOVIE COLLECTION
+                </h2>
+
+                <p>
+                    Explore the world of Batman through comic books,
+                    animated series, and cinematic adaptations.
+                </p>
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item">
+
+                        <img src="images/absolute-batman.jpeg"
+                             alt="Batman besar">
+
+                        <h3>Absolute Batman</h3>
+
+                    </div>
+
+                    <div class="gallery-item">
+
+                        <img src="images/the-batman.jpeg"
+                             alt="batt">
+
+                        <h3>The Batman</h3>
+
+                    </div>
+
+                    <div class="gallery-item">
+
+                        <img src="images/son-of-batman.jpeg"
+                             alt="son of batman">
+
+                        <h3>Son of Batman</h3>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="membership" class="content-section">
+
+                <h2 class="section-title">
+                    <i class="fa-solid fa-id-card"></i>
+                    REGISTRATION MEMBERSHIP
+                </h2>
+
+                <p>
+                    Join our community to explore more our exclusive comic collections,
+                    character profiles, and movies!
+                </p>
+
+                <form action="#" method="post">
+
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter your username"
+                        required
+                    >
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label for="birthdate">
+                        Date of Birth
+                    </label>
+
+                    <input
+                        type="date"
+                        id="birthdate"
+                        name="birthdate"
+                    >
+
+                    <div class="checkbox-group">
+
+                        <input
+                            type="checkbox"
+                            id="agreement"
+                            required
+                        >
+
+                        <label for="agreement">
+                            I agree to the membership terms.
+                        </label>
+
+                    </div>
+
+                    <button type="submit">
+                        REGISTER NOW
+                    </button>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            THE BAT ARCHIVES
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 The Bat Archives.
+            All Rights Reserved.
+        </p>
+
+        <p class="design">
+            Designed by: irak
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
